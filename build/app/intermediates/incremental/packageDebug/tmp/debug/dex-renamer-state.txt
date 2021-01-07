@@ -1,0 +1,4 @@
+#Thu Jan 07 17:28:47 EET 2021
+base.0=C\:\\Flutter_projects\\roman_test\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
