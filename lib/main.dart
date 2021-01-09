@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
             builder: (context) => ChatScreen(),
           ),
         );
-      }
+      },
     };
   }
 
@@ -50,12 +50,12 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: ListView.builder(
           itemCount: _examples.length,
-          itemBuilder: (_, i) {
-            return ExampleItem(
+          itemBuilder: (_, i) => Card(
+            child: ExampleItem(
               title: _examples.keys.toList()[i],
               onItemClicked: _examples.values.toList()[i],
-            );
-          },
+            ),
+          ),
         ),
       );
 }
