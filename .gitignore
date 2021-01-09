@@ -36,3 +36,24 @@ lib/generated_plugin_registrant.dart
 # Exceptions to above rules.
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 .idea/workspace.xml
+*.filecache
+*.dill
+.dart_tool/flutter_build/9b1643c520f17a31cc3759a45ce193d2/debug_android_application.stamp
+*.dill
+*.apk
+*.filecache
+*.dill
+*.stamp
+*.bin
+*.sha1
+*.apk
+build/app/intermediates/flutter/debug/flutter_assets/NOTICES
+build/app/intermediates/flutter/debug/flutter_build.d
+build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt
+build/app/intermediates/merged_assets/debug/out/flutter_assets/NOTICES
+.dart_tool/package_config_subset
+.dart_tool/package_config.json
+.dart_tool/flutter_build/9b1643c520f17a31cc3759a45ce193d2/flutter_assets.d
+.dart_tool/flutter_build/9b1643c520f17a31cc3759a45ce193d2/kernel_snapshot.d
+.idea/libraries/Dart_Packages.xml
+.packages
