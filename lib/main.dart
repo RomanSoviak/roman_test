@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:roman_test/example_item.dart';
+import 'package:roman_test/examples/chat/chat_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,7 +25,20 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  Map<String, Function> _examples;
 
+  @override
+  void initState() {
+    super.initState();
+    _examples = {
+      "Chat": () {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => ChatScreen(),
+          ),
+        );
+      }
+    };
   }
 
   @override
@@ -34,11 +49,11 @@ class _MyHomePageState extends State<MyHomePage> {
           ), //TODO add flutter_intl for supporting localizations
         ),
         body: ListView.builder(
-          itemCount: examples.length,
+          itemCount: _examples.length,
           itemBuilder: (_, i) {
             return ExampleItem(
-              title: examples.keys.toList()[i],
-              onItemClicked: examples.values.toList()[i],
+              title: _examples.keys.toList()[i],
+              onItemClicked: _examples.values.toList()[i],
             );
           },
         ),
