@@ -29,8 +29,18 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
-          title: Text("Examples"),
+          title: Text(
+            "Examples",
+          ), //TODO add flutter_intl for supporting localizations
         ),
-        body: Container(),
+        body: ListView.builder(
+          itemCount: examples.length,
+          itemBuilder: (_, i) {
+            return ExampleItem(
+              title: examples.keys.toList()[i],
+              onItemClicked: examples.values.toList()[i],
+            );
+          },
+        ),
       );
 }
